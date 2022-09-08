@@ -1,0 +1,23 @@
+#conteneur_principal {
+    display: grid;
+    grid-template-columns: repeat(2,1fr 1fr 1fr);
+    grid-template-rows: repeat(2,1fr 1fr 1fr);
+    border: 3px solid rgb(79,280,50);
+    border-radius: 5px;
+    gap: 20px;
+    background-color: darkgrey;
+}
+
+#conteneur_menu {
+    grid-column: 2 /6;
+    grid-row: 2 ;
+    background-color: aqua;
+    padding: 10px;
+}
+
+#conteneur_affichage {
+    grid-row: 6;
+    grid-column: 2;
+    background-color: bisque;
+    padding: 10px;
+}

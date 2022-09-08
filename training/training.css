@@ -1,0 +1,50 @@
+body {
+    font: 15px "Arial";
+}
+
+#conteneur {
+    border: 2px solid black;
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.zone {
+    border : 1px solid green;
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+/*
+#table {
+    border: 1px black solid;
+    background-color: aqua;
+    /*flex: 1 1 auto;
+}
+
+
+#titre {
+    border: 1px green solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /*flex: 1 1 auto;
+}
+
+#entry {
+    background-color: palevioletred;
+}
+
+.entry {
+    background-color: deeppink;
+}
+
+header {
+    text-align: center;
+}
+*/
+
+
+

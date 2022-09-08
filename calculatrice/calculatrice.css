@@ -1,0 +1,111 @@
+/*<button id="diviser" class="bouton">/</button>
+            <button id="multiplier" class="bouton">*</button>
+            <button id="zero" class="bouton">0</button>
+            <button id="un" class="bouton">1</button>
+            <button id="deux" class="bouton">2</button>
+            <button id="trois" class="bouton">3</button>
+            <button id="quatre" class="bouton">4</button>
+            <button id="cinq" class="bouton">5</button>
+            <button id="six" class="bouton">6</button>
+            <button id="sept" class="bouton">7</button>
+            <button id="huit" class="bouton">8</button>
+            <button id="neuf" class="bouton">9</button>
+            <button id="soustraire" class="bouton">-</button>
+            <button id="addition" class="bouton">+</button>
+            <button id="enter" class="bouton">Enter</button>
+            <button id="virgule" class="bouton">,</button> */
+
+#conteneur_principal {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: " input input input input"
+                        " . . bouton_div bouton_multiplier"
+                        " bouton_7 bouton_8 bouton_9 bouton_moins"
+                        " bouton_4 bouton_5 bouton_6 bouton_plus"
+                        " bouton_1 bouton_2 bouton_3 bouton_enter"
+                        " bouton_c bouton_0 bouton_virgule bouton_enter";
+    gap: 5px;
+    width: 400px;
+    height: 500px;
+}
+
+
+#ecran {
+    grid-area: input;
+    border : 1px solid grey;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#diviser {
+    grid-area: bouton_div;
+}
+
+#multiplier {
+    grid-area: bouton_multiplier;
+}
+
+#sept {
+    grid-area: bouton_7;
+}
+
+#huit {
+    grid-area: bouton_8;
+}
+
+#neuf {
+    grid-area: bouton_9;
+}
+
+#soustraire {
+    grid-area: bouton_moins;
+}
+
+#quatre {
+    grid-area: bouton_4;
+}
+
+#enter {
+    grid-area: bouton_enter;
+}
+
+#cinq {
+    grid-area: bouton_5;
+}
+
+#un {
+    grid-area: bouton_1;
+}
+
+#deux {
+    grid-area: bouton_2;
+}
+
+#trois {
+    grid-area: bouton_3;
+}
+
+#zero {
+    grid-area: bouton_0;
+}
+#virgule {
+    grid-area: bouton_virgule;
+}
+
+#six {
+    grid-area: bouton_6;
+}
+
+#addition {
+    grid-area: bouton_plus;
+}
+
+.bouton {
+    border-radius: 2px;
+    font-size: 20px;
+}
+
+#erase {
+    grid-area: bouton_c;
+}
