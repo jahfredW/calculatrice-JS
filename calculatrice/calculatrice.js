@@ -4,6 +4,7 @@ var touche_deux = document.getElementById("deux");
 var touche_plus = document.getElementById("addition");
 var screen = document.getElementById("ecran");
 var touche_enter = document.getElementById("enter");
+var total = 0;
 
 /*touche_plus.style.backgroundColor = 'white';*/
 
@@ -30,8 +31,9 @@ function touch_two() {
 
 function touch_plus() {
     touche_plus.addEventListener("click", (data) => {
-        if (main_text[(main_text.length) - 1] !== "+" && main_text.length !== 0) {
+        if (main_text[(main_text.length) - 1] !== "+" && main_text.length !== 0 ) {
             main_text += data.target.value;
+            console.log(main_text);
         };
         data.target.style.backgroundColor = "orange";
 
@@ -41,11 +43,11 @@ function touch_plus() {
             data.target.style.backgroundColor = "";
         }, 300);
     }, false);
-    screen.innerText = main_text;
+    //screen.innerText = main_text;
 }
 
 touche_enter.addEventListener("click", ()=> {
-    let total = 0;
+    //let total = 0;
     let new_pos = 0;
     let index_plus = main_text.indexOf("+");
     while (index_plus !== -1 && new_pos !== -1) {
@@ -60,6 +62,7 @@ touche_enter.addEventListener("click", ()=> {
     }
     screen.innerText = total;
     console.log("total_final",total);
+    main_text = main_text.slice(0, main_text.indexOf("+"));
 });
 
 
